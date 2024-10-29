@@ -1,0 +1,2 @@
+-- 000002_create_patient_medical_history_table.down.sql
+DROP TABLE patient_medical_history;

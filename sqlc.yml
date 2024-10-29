@@ -1,0 +1,14 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    schema: "./migrations"
+    queries: "./internal/platform/repository/queries"
+    gen:
+      go:
+        package: "db"
+        out: "./internal/platform/repository/sqlc"
+        emit_empty_slices: true
+        emit_json_tags: true
+        # db_tags_case_style: "snake"  # Comment out or remove
+        # json_tags_case_style: "snake" # Comment out or remove
+# overrides: ... Comment out or remove the entire overrides block
